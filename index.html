@@ -373,16 +373,16 @@
     function closeModal() { document.getElementById("modal").classList.remove("open"); }
     function saveDay() {
       data[selectedKey] = {
-        title: title.value,
-        tag: tag.value,
-        km: km.value,
-        pace: pace.value,
-        rest: rest.value,
-        content: content.value,
-        purpose: purpose.value,
-        memo: memo.value,
-        fatigue: fatigue.value,
-        done: done.value
+        title: document.getElementById("title").value,
+        tag: document.getElementById("tag").value,
+        km: document.getElementById("km").value,
+        pace: document.getElementById("pace").value,
+        rest: document.getElementById("rest").value,
+        content: document.getElementById("content").value,
+        purpose: document.getElementById("purpose").value,
+        memo: document.getElementById("memo").value,
+        fatigue: document.getElementById("fatigue").value,
+        done: document.getElementById("done").value
       };
       saveData();
       closeModal();
